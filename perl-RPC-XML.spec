@@ -18,7 +18,6 @@ BuildRequires:	perl(XML::Parser)
 BuildRequires:	perl(Net::Server)
 BuildRequires:  perl(LWP::UserAgent)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The RPC::XML package is a reference implementation of the XML-RPC
