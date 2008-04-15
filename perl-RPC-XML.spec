@@ -1,7 +1,7 @@
 %define module	RPC-XML
 %define name	perl-%{module}
-%define version 0.59
-%define release %mkrel 3
+%define version 0.60
+%define release %mkrel 1
 
 Name: 		%{name}
 Version: 	%{version}
