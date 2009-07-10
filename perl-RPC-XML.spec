@@ -1,16 +1,16 @@
-%define module	RPC-XML
-%define name	perl-%{module}
-%define version 0.66
-%define release %mkrel 1
+%define upstream_name	 RPC-XML
+%define upstream_version 0.67
 
-Name: 		%{name}
-Version: 	%{version}
-Release:	%{release} 
+Name: 		perl-%{upstream_name}
+Version: 	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
+
 Summary:	A set of classes for core data, message and XML handling
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/RPC/%{module}-%{version}.tar.bz2
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/RPC/%{upstream_name}-%{upstream_version}.tar.gz
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
@@ -18,7 +18,7 @@ BuildRequires:	perl(XML::Parser)
 BuildRequires:	perl(Net::Server)
 BuildRequires:  perl(LWP::UserAgent)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The RPC::XML package is a reference implementation of the XML-RPC
@@ -43,7 +43,7 @@ Group:		Development/Perl
 RPC server as an Apache/mod_perl content handler.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
