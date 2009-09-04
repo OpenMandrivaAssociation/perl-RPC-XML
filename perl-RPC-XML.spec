@@ -1,5 +1,5 @@
 %define upstream_name	 RPC-XML
-%define upstream_version 0.67
+%define upstream_version 0.69
 
 Name: 		perl-%{upstream_name}
 Version: 	%perl_convert_version %{upstream_version}
