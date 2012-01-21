@@ -3,7 +3,7 @@
 
 Name: 		perl-%{upstream_name}
 Version: 	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 3
 
 Summary:	A set of classes for core data, message and XML handling
 License:	GPL+ or Artistic
