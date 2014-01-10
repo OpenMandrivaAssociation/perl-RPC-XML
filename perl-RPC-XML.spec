@@ -54,8 +54,8 @@ RPC server as an Apache/mod_perl content handler.
 %files
 %doc ChangeLog README*
 %{_bindir}/*
-%{perl_vendorlib}/RPC
-%{perl_vendorlib}/auto/RPC
+# %{perl_vendorlib}/RPC
+# %{perl_vendorlib}/auto/RPC
 %{_mandir}/man3/*
 %exclude %{_mandir}/man3/Apache*
 %{_mandir}/man1/*
