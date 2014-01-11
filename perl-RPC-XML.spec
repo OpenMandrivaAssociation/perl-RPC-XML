@@ -54,26 +54,10 @@ RPC server as an Apache/mod_perl content handler.
 %files
 %doc ChangeLog README*
 %{_bindir}/*
-# %{perl_vendorlib}/RPC
-# %{perl_vendorlib}/auto/RPC
+%{perl_vendorlib}/RPC
 %{_mandir}/man3/*
 %exclude %{_mandir}/man3/Apache*
 %{_mandir}/man1/*
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML.pm
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/Client.pm
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/Parser.pm
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/Parser/XMLLibXML.pm
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/Parser/XMLParser.pm
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/ParserFactory.pm
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/Procedure.pm
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/Server.pm
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/identity.xpl
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/introspection.xpl
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/listMethods.xpl
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/methodHelp.xpl
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/methodSignature.xpl
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/multicall.xpl
-%{_libdir}/perl5/vendor_perl/5.16.3/RPC/XML/status.xpl
 
 %files Apache
 %doc README.apache2
