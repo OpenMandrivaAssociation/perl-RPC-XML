@@ -1,2 +1,4 @@
+removed_sources:
+  RPC-XML-0.74.tar.gz: 015698ac193411ecb155d0e4012ce5aa83ad6c49
 sources:
-  "RPC-XML-0.74.tar.gz": 015698ac193411ecb155d0e4012ce5aa83ad6c49
+  RPC-XML-0.77.tar.gz: 0dba1cbd6443dd0d23027914cdaaf392cbbfc96e
