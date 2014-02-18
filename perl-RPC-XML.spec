@@ -1,5 +1,5 @@
 %define modname	RPC-XML
-%define modver 0.77
+%define modver 0.78
 
 Summary:	A set of classes for core data, message and XML handling
 Name:		perl-%{modname}
@@ -63,5 +63,6 @@ RPC server as an Apache/mod_perl content handler.
 %doc README.apache2
 %{perl_vendorlib}/Apache
 %{_mandir}/man3/Apache*
+
 
 
