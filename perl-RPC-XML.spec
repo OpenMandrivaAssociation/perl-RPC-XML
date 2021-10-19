@@ -38,31 +38,31 @@ Group:		Development/Perl
 RPC server as an Apache/mod_perl content handler.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor
+%make_build
 
 %check
 # make tests don't work
 #make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc ChangeLog README*
 %{_bindir}/*
 %{perl_vendorlib}/RPC
-%{_mandir}/man3/*
+%doc %{_mandir}/man3/*
 %exclude %{_mandir}/man3/Apache*
-%{_mandir}/man1/*
+%doc %{_mandir}/man1/*
 
 %files Apache
 %doc README.apache2
 %{perl_vendorlib}/Apache
-%{_mandir}/man3/Apache*
+%doc %{_mandir}/man3/Apache*
 
 
 
