@@ -1,14 +1,14 @@
 %define modname	RPC-XML
-%define modver 0.78
+%define modver 0.82
 
 Summary:	A set of classes for core data, message and XML handling
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	8
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:	https://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/RPC/RPC-XML-%{modver}.tar.gz
+Url:	http://github.com/rjray/rpc-xml
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJRAY/RPC-XML-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
