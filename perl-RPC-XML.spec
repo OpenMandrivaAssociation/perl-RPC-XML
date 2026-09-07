@@ -4,7 +4,7 @@
 Summary:	A set of classes for core data, message and XML handling
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:	http://github.com/rjray/rpc-xml
@@ -13,6 +13,7 @@ BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(XML::Parser)
+BuildRequires:	perl(XML::LibXML)
 BuildRequires:	perl(Net::Server)
 BuildRequires:	perl(LWP::UserAgent)
 
